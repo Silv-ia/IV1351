@@ -1,3 +1,5 @@
+-- 50 in total: 15 students, 2*2 siblings, 2*3 siblings = 25 students, 19 contact persons, 6 instructors
+
 INSERT INTO public.allowed_rentals(
 	max_allowed_rentals)
 	VALUES (2);
@@ -54,3 +56,27 @@ INSERT INTO public.contact_details(
   ('nulla.eget.metus@outlook.net','(0110) 186 3851'),
   ('at.velit.pellentesque@aol.edu','0800 566 9861'),
   ('quisque@icloud.com','0930 894 8652');
+
+
+-- 1-19 are contact persons. find alternative way to insert the range contact_id (random nrs and not 1-50).
+INSERT INTO public.contact_person(
+	contact_id, first_name, last_name)
+	VALUES (1,'Drake','Wall'),
+	  (2,'Lesley','Mcneil'),
+	  (3,'Wesley','Glass'),
+	  (4,'Fay','Haney'),
+	  (5,'Juliet','Harmon'),
+	  (6,'August','Gilbert'),
+	  (7,'Noelle','Blevins'),
+	  (8,'Maya','Irwin'),
+	  (9,'Travis','Sampson'),
+	  (10,'Craig','Banks'),
+	  (11,'Stephen','Mccray'),
+	  (12,'Deborah','Solis'),
+	  (13,'Jessica','Nicholson'),
+	  (14,'Meghan','Hudson'),
+	  (15,'Raphael','Roman'),
+	  (16,'Shea','Bradford'),
+	  (17,'Camden','Peck'),
+	  (18,'Palmer','Gilmore'),
+	  (19,'Kiona','Lee');
