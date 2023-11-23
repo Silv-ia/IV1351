@@ -178,3 +178,37 @@ INSERT INTO public.sibling(
 	(75,54),
 	(75,74);
 
+-- instructor_id 1-6
+INSERT INTO public.instrument(
+	instrument_name, instructor_id, level_taught)
+	VALUES ('trombone',3,'advanced'),
+  ('clarinet',2,'beginner'),
+  ('accordion',2,'intermediate'),
+  ('guitar',4,'beginner'),
+  ('ukulele',4,'intermediate'),
+  ('bongo',1,'intermediate'),
+  ('violin',1,'advanced'),
+  ('bass guitar',3,'intermediate'),
+  ('flute',2,'advanced'),
+  ('violin',6,'intermediate'),
+  ('bongo',5,'advanced'),
+  ('tuba',5,'intermediate'),
+  ('saxophone',6,'intermediate'),
+  ('xylophone',5,'beginner'),
+  ('bass guitar',1,'advanced'),
+  ('cello',5,'intermediate'),
+  ('bass guitar',2,'intermediate'),
+  ('xylophone',2,'advanced'),
+  ('cymbal',4,'intermediate'),
+  ('viola',4,'beginner'),
+  ('bongo',6,'advanced'),
+  ('maracas',5,'beginner'),
+  ('bass guitar',5,'intermediate'),
+  ('saxophone',3,'intermediate'),
+  ('clarinet',6,'intermediate'),
+  ('violin',3,'beginner'),
+  ('harmonica',3,'advanced'),
+  ('mandolin',4,'intermediate'),
+  ('oboe',1,'intermediate'),
+  ('clarinet',5,'intermediate');
+
