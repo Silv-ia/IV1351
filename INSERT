@@ -146,3 +146,13 @@ INSERT INTO public.student(
   (3,200807243167,'1'),
   (4,200507166374,'1'),
   (4,200005294678,'1');
+
+
+INSERT INTO public.instructor(
+	personal_number, can_teach_ensemble)
+	VALUES (196512046641,'True'),
+  (193111088766,'True'),
+  (196812043231,'True'),
+  (196300025044,'True'),
+  (190612014960,'False'),
+  (191612035423,'True');
