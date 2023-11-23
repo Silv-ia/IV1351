@@ -80,3 +80,42 @@ INSERT INTO public.contact_person(
 	  (17,'Camden','Peck'),
 	  (18,'Palmer','Gilmore'),
 	  (19,'Kiona','Lee');
+
+
+-- 20-50 are students/instr
+INSERT INTO public.personal_details(
+	personal_number, address, first_name, last_name, contact_id)
+	VALUES ('197010042325','Ap #980-1625 Erat Rd.','Carlos','Watkins',20),
+  ('197110061466','Ap #916-4170 Curabitur Rd.','Maile','Welch',21),
+  ('200108242487','Ap #147-9841 Molestie. Rd.','Zachary','Sutton',22),
+  ('200708283884','P.O. Box 822, 7961 Et, Av.','Cathleen','Vang',23),
+  ('198810058484','3317 Magnis Ave','Hector','Mckay',24),
+  ('195212033441','Ap #976-5601 Diam Av.','Valentine','Albert',25),
+  ('196011071994','233-6373 Nunc, Street','Angelica','Sanford',26),
+  ('200202194221','915-3984 Elit, St.','Erin','Glass',27),
+  ('196910067944','710 Sapien. Street','Dennis','Hickman',28),
+  ('200508155747','P.O. Box 984, 9804 Tristique Rd.','Lani','Sanders',29),
+  ('197603078974','568-5451 Sit Avenue','Regan','Oneal',30),
+  ('195111094423','181-8894 Dui, Rd.','Kenneth','Nixon',31),
+  ('198510034545','Ap #445-9379 Id Ave','Zahir','Ingram',32),
+  ('195307086785','Ap #156-5092 Ligula. St.','Chester','Walton',33),
+  ('200108118541','409-2318 Velit Av.','Carly','Harper',34),
+  ('200601134203','Ap #813-760 Phasellus St.','Yen','Holden',35),
+  ('196309065332','759-286 Eu Av.','Victoria','Suarez',36),
+  ('194811041325','519-8369 Aliquam Rd.','Darius','Hardy',37),
+  ('197511050211','979-7679 Tellus. St.','Bryar','Mathis',38),
+  ('192212051376','Ap #177-7754 Vitae Street','Porter','Sanford',39),
+  ('190111082853','Ap #916-3814 Vitae Av.','Carson','Hammond',40),
+  ('197208035613','5108 Phasellus Av.','Ella','Weiss',41),
+  ('200807243167','9969 Faucibus Rd.','Rafael','Fernandez',42),
+  ('200507166374','3219 Arcu. St.','Leandra','Solis',43),
+  ('200005294678','Ap #622-329 Nunc. Ave','Beau','Burnett',44),
+  ('196512046641','850-7821 A Ave','Basil','Durham',45),
+  ('193111088766','8115 Cras St.','Rama','Frazier',46),
+  ('196812043231','716-7545 Et Av.','Channing','Stone',47),
+  ('196300025044','Ap #542-2455 Eget Rd.','Kylan','Beck',48),
+  ('190612014960','Ap #863-7501 Sit Avenue','Moses','Clarke',49),
+  ('191612035423','952-7191 Nullam Av.','Demetria','Battle',50);
+
+
+
