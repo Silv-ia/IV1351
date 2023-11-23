@@ -82,7 +82,7 @@ INSERT INTO public.contact_person(
 	  (19,'Kiona','Lee');
 
 
--- 20-50 are students/instr
+-- 20-44 are students. 45-50 are instr.
 INSERT INTO public.personal_details(
 	personal_number, address, first_name, last_name, contact_id)
 	VALUES ('197010042325','Ap #980-1625 Erat Rd.','Carlos','Watkins',20),
@@ -118,4 +118,31 @@ INSERT INTO public.personal_details(
   ('191612035423','952-7191 Nullam Av.','Demetria','Battle',50);
 
 
-
+-- personal numbers were copied, next time try SELECT or pg_dump. contact persons were mapped according to siblings.
+INSERT INTO public.student(
+	contact_person_id, personal_number, allowed_rentals_id)
+	VALUES (1,197010042325,'1'),
+  (2,197110061466,'1'),
+  (3,200108242487,'1'),
+  (4,200708283884,'1'),
+  (5,198810058484,'1'),
+  (6,195212033441,'1'),
+  (7,196011071994,'1'),
+  (8,200202194221,'1'),
+  (9,196910067944,'1'),
+  (10,200508155747,'1'),
+  (11,197603078974,'1'),
+  (12,195111094423,'1'),
+  (13,198510034545,'1'),
+  (14,195307086785,'1'),
+  (15,200108118541,'1'),
+  (16,200601134203,'1'),
+  (17,196309065332,'1'),
+  (18,194811041325,'1'),
+  (19,197511050211,'1'),
+  (1,192212051376,'1'),
+  (2,190111082853,'1'),
+  (3,197208035613,'1'),
+  (3,200807243167,'1'),
+  (4,200507166374,'1'),
+  (4,200005294678,'1');
