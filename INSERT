@@ -156,3 +156,25 @@ INSERT INTO public.instructor(
   (196300025044,'True'),
   (190612014960,'False'),
   (191612035423,'True');
+
+
+-- sibling: student_id 51-75. 
+INSERT INTO public.sibling(
+	student_id, sibling_student_id)
+	VALUES (51,70),
+	(70,51),
+	(52,71),
+	(71,52),
+	(53,72),
+	(53,73),
+	(72,53),
+	(72,73),
+	(73,53),
+	(73,72),
+	(54,74),
+	(54,75),
+	(74,54),
+	(74,75),
+	(75,54),
+	(75,74);
+
