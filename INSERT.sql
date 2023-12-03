@@ -302,7 +302,12 @@ INSERT INTO public.booking(
   (10,67,'true','harmonica',3),
   (8,63,'true','violin',6),
   (10,52,'true','saxophone',3),
-  (20,62,'false','mandolin',4);
+  (20,62,'false','mandolin',4),
+  (2,53,'true','guitar',4),
+  (3,54,'true','flute',2),
+  (7,55,'true','violin',1),
+  (9,71,'true','bongo',5),
+  (19,63,'false','viola',4);
 
 
 
