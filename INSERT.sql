@@ -328,3 +328,28 @@ INSERT INTO public.instrument_cost(
   (262),
   (140),
   (456);
+
+
+
+INSERT INTO public.rental_instrument(
+	instrument_name, instrument_type, instrument_brand, cost_id)
+	VALUES ('harmonica','string','BFEBVRD',4),
+  ('violin','string','MEOCVCX',3),
+  ('guitar','string','YKKXFKT',13),
+  ('ukulele','string','KFCLPVN',1),
+  ('harmonica','string','EFDYOHC',17),
+  ('guitar','string','LUVCDCF',18),
+  ('cello','string','YGGRZHE',13),
+  ('harmonica','wind','LIMKQST',10),
+  ('violin','string','HFYNJLY',15),
+  ('violin','wind','OVADUSH',8),
+  ('violin','wind','VUJEXRY',9),
+  ('guitar','string','VDYGGEJ',16),
+  ('guitar','wind','QVGQJJD',16),
+  ('harmonica','wind','QTHULEH',12),
+  ('ukulele','wind','BWRJRLH',9),
+  ('violin','string','RUYCYXA',17),
+  ('cello','wind','ZISMPOI',14),
+  ('violin','string','JAZKDIF',8),
+  ('cello','wind','ZBUSDNG',11),
+  ('harp','string','ZRSNHDD',7);
