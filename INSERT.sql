@@ -212,3 +212,14 @@ INSERT INTO public.instrument(
   ('oboe',1,'intermediate'),
   ('clarinet',5,'intermediate');
 
+INSERT INTO public.lesson_price_scheme(
+	lesson_type, lesson_level, student_cost, instructor_payment, discount, is_valid)
+	VALUES ('individual','beginner',400,193,49,'true'),
+  ('ensemble','beginner',274,161,8,'true'),
+  ('group','intermediate',266,168,2,'true'),
+  ('group','advanced',276,232,24,'false'),
+  ('ensemble','intermediate',487,132,36,'true'),
+  ('group','beginner',107,286,4,'true'),
+  ('individual','intermediate',157,85,68,'true'),
+  ('ensemble','advanced',322,239,9,'false'),
+  ('individual','advanced',299,69,12,'false');
