@@ -263,4 +263,15 @@ INSERT INTO public.individual_lesson(
   (2,'advanced',12),
   (6,'beginner',3),
   (6,'advanced',4),
-  (9,'intermediate',5);
+  (9,'intermediate',5),
+  (9,'advanced',10),
+  (7,'intermediate',14),
+  (3,'intermediate',19),
+  (4,'advanced',19),
+  (2,'intermediate',13),
+  (7,'advanced',11),
+  (1,'advanced',7),
+  (7,'beginner',4),
+  (7,'intermediate',17),
+  (2,'intermediate',17);
+
