@@ -249,3 +249,18 @@ INSERT INTO public.time_slot(
   (5,'8:47 PM','3:04 PM','Sep 27, 2024'),
   (1,'6:26 AM','3:20 AM','Feb 19, 2023'),
   (4,'4:55 PM','4:23 AM','Sep 2, 2024');
+
+
+
+INSERT INTO public.individual_lesson(
+	lesson_cost_id, lesson_level, timeslot_id)
+	VALUES (8,'intermediate',1),
+  (1,'intermediate',17),
+  (7,'intermediate',16),
+  (9,'advanced',2),
+  (8,'intermediate',3),
+  (2,'beginner',7),
+  (2,'advanced',12),
+  (6,'beginner',3),
+  (6,'advanced',4),
+  (9,'intermediate',5);
