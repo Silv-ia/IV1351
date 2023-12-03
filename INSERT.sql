@@ -353,3 +353,27 @@ INSERT INTO public.rental_instrument(
   ('violin','string','JAZKDIF',8),
   ('cello','wind','ZBUSDNG',11),
   ('harp','string','ZRSNHDD',7);
+
+
+INSERT INTO public.lease(
+	lease_start_date, lease_end_date, instrument_id, student_id, is_active)
+	VALUES ('Jul 14, 2023','Oct 17, 2023',4,57,'false'),
+  ('Jun 27, 2024','Oct 8, 2024',3,66,'false'),
+  ('Jan 11, 2024','Aug 23, 2023',13,70,'true'),
+  ('Nov 5, 2023','Dec 5, 2022',1,57,'true'),
+  ('Jul 20, 2023','Aug 30, 2024',17,57,'false'),
+  ('Nov 22, 2024','Nov 4, 2023',18,73,'true'),
+  ('Mar 16, 2023','Aug 1, 2024',13,62,'false'),
+  ('Jul 21, 2024','Jan 24, 2023',10,75,'true'),
+  ('Jun 1, 2023','Jun 11, 2023',15,56,'false'),
+  ('Nov 16, 2023','Jun 1, 2024',8,58,'false'),
+  ('Aug 29, 2023','Oct 9, 2023',9,64,'false'),
+  ('May 1, 2024','Jun 14, 2024',16,70,'false'),
+  ('May 20, 2024','May 13, 2024',16,68,'true'),
+  ('Jul 17, 2024','Mar 21, 2023',12,70,'true'),
+  ('Jun 2, 2023','Jan 25, 2023',9,53,'false'),
+  ('Jan 25, 2024','Jan 22, 2024',17,61,'true'),
+  ('Sep 16, 2023','Jan 3, 2024',14,72,'false'),
+  ('Apr 29, 2024','Mar 2, 2024',8,59,'false'),
+  ('Aug 6, 2024','Jun 30, 2024',11,70,'false'),
+  ('Feb 22, 2023','Feb 12, 2023',7,57,'true');
