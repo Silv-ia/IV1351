@@ -291,3 +291,15 @@ INSERT INTO public.ensemble(
 	VALUES (8,'r and b'),
   (10,'classical'),
   (20,'rock');
+
+
+INSERT INTO public.booking(
+	individual_lesson_id, student_id, eligible_for_discount, instrument_name, instructor_id)
+	VALUES (1,58,'true','clarinet',2),
+  (8,61,'true','trombone',3),
+  (1,62,'true','tuba',5),
+  (20,51,'true','tuba',5),
+  (10,67,'true','harmonica',3),
+  (8,63,'true','violin',6),
+  (10,52,'true','saxophone',3),
+  (20,62,'false','mandolin',4);
