@@ -284,3 +284,10 @@ INSERT INTO public.group_lesson(
   (20,5,10),
   (19,4,10),
   (1,3,8);
+
+
+INSERT INTO public.ensemble(
+	individual_lesson_id, genre)
+	VALUES (8,'r and b'),
+  (10,'classical'),
+  (20,'rock');
