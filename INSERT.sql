@@ -303,3 +303,28 @@ INSERT INTO public.booking(
   (8,63,'true','violin',6),
   (10,52,'true','saxophone',3),
   (20,62,'false','mandolin',4);
+
+
+
+INSERT INTO public.instrument_cost(
+	lease_fee)
+	VALUES (279),
+  (442),
+  (354),
+  (59),
+  (423),
+  (298),
+  (148),
+  (167),
+  (422),
+  (291),
+  (298),
+  (277),
+  (284),
+  (245),
+  (306),
+  (298),
+  (144),
+  (262),
+  (140),
+  (456);
