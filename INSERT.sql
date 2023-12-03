@@ -275,3 +275,12 @@ INSERT INTO public.individual_lesson(
   (7,'intermediate',17),
   (2,'intermediate',17);
 
+
+
+INSERT INTO public.group_lesson(
+	individual_lesson_id, min_attendees, max_attendees)
+	VALUES (8,4,8),
+  (10,2,9),
+  (20,5,10),
+  (19,4,10),
+  (1,3,8);
