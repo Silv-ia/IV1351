@@ -223,3 +223,29 @@ INSERT INTO public.lesson_price_scheme(
   ('individual','intermediate',157,85,68,'true'),
   ('ensemble','advanced',322,239,9,'false'),
   ('individual','advanced',299,69,12,'false');
+
+
+
+
+INSERT INTO public.time_slot(
+	instructor_id, start_time, end_time, date)
+	VALUES (1,'12:27 PM','3:00 PM','Feb 27, 2023'),
+  (1,'8:30 AM','9:19 AM','Jan 6, 2023'),
+  (2,'3:53 PM','7:52 PM','Jan 27, 2023'),
+  (4,'10:56 AM','2:14 AM','Jan 4, 2023'),
+  (6,'5:09 PM','11:56 PM','Jun 23, 2023'),
+  (3,'10:18 AM','12:27 PM','May 15, 2023'),
+  (6,'5:52 AM','9:55 AM','Jan 9, 2023'),
+  (6,'12:08 PM','6:45 AM','Jan 17, 2024'),
+  (2,'12:30 PM','4:05 PM','Sep 4, 2024'),
+  (3,'7:03 AM','6:27 AM','Sep 5, 2024'),
+  (4,'1:24 PM','7:24 PM','Mar 15, 2024'),
+  (3,'3:55 PM','4:50 AM','Apr 28, 2024'),
+  (5,'11:29 AM','12:39 AM','Jan 14, 2024'),
+  (1,'8:46 PM','3:53 PM','Nov 28, 2022'),
+  (2,'4:45 PM','7:49 PM','Apr 29, 2024'),
+  (1,'4:20 PM','8:15 PM','Jun 4, 2023'),
+  (2,'6:49 PM','1:35 PM','Nov 4, 2023'),
+  (5,'8:47 PM','3:04 PM','Sep 27, 2024'),
+  (1,'6:26 AM','3:20 AM','Feb 19, 2023'),
+  (4,'4:55 PM','4:23 AM','Sep 2, 2024');
