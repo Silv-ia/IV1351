@@ -1,7 +1,7 @@
 -- all lessons during a specific year, each month and lesson type. 
 
 SELECT
-    EXTRACT(MONTH FROM ts.date) AS month,
+    TO_CHAR(ts.date, 'Month') AS month,
     COUNT(l.individual_lesson_id) AS total_lessons,
     COUNT(CASE WHEN gl.individual_lesson_id IS NULL AND e.individual_lesson_id IS NULL THEN l.individual_lesson_id END) AS individual_lessons,
 	COUNT (CASE WHEN e.individual_lesson_id IS NULL THEN gl.individual_lesson_id END) AS group_lessons,
@@ -17,6 +17,6 @@ LEFT JOIN
 WHERE
     EXTRACT(YEAR FROM ts.date) = 2023
 GROUP BY
-    EXTRACT(MONTH FROM ts.date)
+    TO_CHAR(ts.date, 'Month')
 ORDER BY
-    month;
+    MIN(ts.date);
