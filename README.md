@@ -7,3 +7,6 @@ Contains queries for creating tables. Generated in Astah.
 For inserting data into the tables. 
 https://generatedata.com/generator was used to generate the data, information on amounts is in the file. 
 Incomplete.
+
+##### query_three.sql
+Four queries for the different sub-tasks of task 3.
