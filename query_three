@@ -20,3 +20,21 @@ GROUP BY
     TO_CHAR(ts.date, 'Month')
 ORDER BY
     MIN(ts.date);
+
+
+-- all instructors teaching during a specific month
+SELECT 
+    i.instructor_id,
+    pd.first_name,
+    pd.last_name,
+    COUNT(ts.timeslot_id) AS "No of lessons"
+FROM 
+    instructor i
+JOIN 
+    personal_details pd ON i.personal_number = pd.personal_number
+JOIN 
+    time_slot ts ON i.instructor_id = ts.instructor_id
+WHERE 
+    EXTRACT(MONTH FROM ts.date) = 1
+GROUP BY 
+    i.instructor_id, pd.first_name, pd.last_name;
