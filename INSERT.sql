@@ -249,7 +249,7 @@ INSERT INTO public.time_slot(
   (5,'8:47 PM','3:04 PM','Sep 27, 2024'),
   (1,'6:26 AM','3:20 AM','Feb 19, 2023'),
   (4,'4:55 PM','4:23 AM','Sep 2, 2024'),
-  -- new entries for dec, ensembles
+  -- new entries for dec, ensembles. time_slot_id 41-80
   (3,'7:53 PM','10:49 AM','Dec 22, 2023'),
   (3,'7:34 AM','1:14 PM','Dec 10, 2023'),
   (2,'9:07 PM','2:18 PM','Dec 17, 2023'),
