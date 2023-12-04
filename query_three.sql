@@ -93,7 +93,7 @@ JOIN
 LEFT JOIN
     booking b ON e.individual_lesson_id = b.individual_lesson_id
 WHERE
-    ts.date BETWEEN CURRENT_DATE + INTERVAL '14 day' AND CURRENT_DATE + INTERVAL '21 days'
+    ts.date BETWEEN CURRENT_DATE + INTERVAL '1 day' AND CURRENT_DATE + INTERVAL '7 days'
 GROUP BY
     e.individual_lesson_id, e.genre, g.max_attendees, ts.date
 ORDER BY
