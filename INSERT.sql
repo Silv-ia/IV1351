@@ -430,7 +430,7 @@ INSERT INTO public.booking(
   (9,71,'true','bongo',5),
   (19,63,'false','viola',4),
   -- ens
-  (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 58, 'true', 'clarinet', 2),
+  (FLOOR(RANDOM() * (45 - 21 + 1) + 21), FLOOR(RANDOM() * (75 - 51 + 1) + 51), 'true', 'clarinet', 2),
     (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 61, 'true', 'trombone', 3),
     (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 62, 'true', 'tuba', 5),
     (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 51, 'true', 'tuba', 5),
@@ -455,6 +455,8 @@ INSERT INTO public.booking(
     (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 54, 'true', 'flute', 2),
     (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 55, 'true', 'violin', 1),
     (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 71, 'true', 'bongo', 5);
+
+-- FLOOR(RANDOM() * (75 - 51 + 1) + 51)
 
 
 
