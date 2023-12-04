@@ -314,7 +314,33 @@ INSERT INTO public.individual_lesson(
   (1,'advanced',7),
   (7,'beginner',4),
   (7,'intermediate',17),
-  (2,'intermediate',17);
+  (2,'intermediate',17),
+  -- ens
+  (1,'beginner',59),
+  (4,'advanced',45),
+  (4,'beginner',43),
+  (6,'advanced',52),
+  (6,'beginner',47),
+  (4,'beginner',50),
+  (9,'advanced',72),
+  (7,'intermediate',57),
+  (5,'intermediate',68),
+  (3,'advanced',59),
+  (8,'intermediate',80),
+  (4,'intermediate',55),
+  (3,'advanced',76),
+  (7,'advanced',74),
+  (3,'intermediate',73),
+  (7,'intermediate',49),
+  (9,'beginner',78),
+  (7,'intermediate',69),
+  (3,'intermediate',46),
+  (3,'advanced',65),
+  (3,'beginner',71),
+  (6,'intermediate',57),
+  (5,'advanced',71),
+  (9,'intermediate',78),
+  (4,'advanced',75);
 
 
 
