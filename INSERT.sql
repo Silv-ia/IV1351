@@ -383,7 +383,35 @@ INSERT INTO public.ensemble(
 	individual_lesson_id, genre)
 	VALUES (8,'r and b'),
   (10,'classical'),
-  (20,'rock');
+  (20,'rock'),
+	-- nxt week
+  INSERT INTO public.ensemble(
+	individual_lesson_id, genre)
+	VALUES (21, 'Jazz'),
+  (22, 'Classical'),
+  (23, 'Rock'),
+  (24, 'Blues'),
+  (25, 'Pop'),
+  (26, 'Funk'),
+  (27, 'Country'),
+  (28, 'Reggae'),
+  (29, 'Hip Hop'),
+  (30, 'Electronic'),
+  (31, 'R&B'),
+  (32, 'Metal'),
+  (33, 'Indie'),
+  (34, 'Soul'),
+  (35, 'Folk'),
+  (36, 'Alternative'),
+  (37, 'Latin'),
+  (38, 'Punk'),
+  (39, 'Bluegrass'),
+  (40, 'Disco'),
+  (41, 'Gospel'),
+  (42, 'Ska'),
+  (43, 'Swing'),
+  (44, 'Techno'),
+  (45, 'Opera');
 
 
 INSERT INTO public.booking(
