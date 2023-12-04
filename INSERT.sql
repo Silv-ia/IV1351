@@ -428,7 +428,33 @@ INSERT INTO public.booking(
   (3,54,'true','flute',2),
   (7,55,'true','violin',1),
   (9,71,'true','bongo',5),
-  (19,63,'false','viola',4);
+  (19,63,'false','viola',4),
+  -- ens
+  (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 58, 'true', 'clarinet', 2),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 61, 'true', 'trombone', 3),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 62, 'true', 'tuba', 5),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 51, 'true', 'tuba', 5),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 67, 'true', 'harmonica', 3),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 63, 'true', 'violin', 6),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 52, 'true', 'saxophone', 3),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 62, 'false', 'mandolin', 4),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 53, 'true', 'guitar', 4),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 54, 'true', 'flute', 2),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 55, 'true', 'violin', 1),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 71, 'true', 'bongo', 5),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 63, 'false', 'viola', 4),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 58, 'true', 'clarinet', 2),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 61, 'true', 'trombone', 3),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 62, 'true', 'tuba', 5),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 51, 'true', 'tuba', 5),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 67, 'true', 'harmonica', 3),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 63, 'true', 'violin', 6),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 52, 'true', 'saxophone', 3),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 62, 'false', 'mandolin', 4),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 53, 'true', 'guitar', 4),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 54, 'true', 'flute', 2),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 55, 'true', 'violin', 1),
+    (FLOOR(RANDOM() * (45 - 21 + 1) + 21), 71, 'true', 'bongo', 5);
 
 
 
