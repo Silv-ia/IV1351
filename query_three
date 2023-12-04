@@ -1,0 +1,22 @@
+-- all lessons during a specific year, each month and lesson type. 
+
+SELECT
+    EXTRACT(MONTH FROM ts.date) AS month,
+    COUNT(l.individual_lesson_id) AS total_lessons,
+    COUNT(CASE WHEN gl.individual_lesson_id IS NULL AND e.individual_lesson_id IS NULL THEN l.individual_lesson_id END) AS individual_lessons,
+	COUNT (CASE WHEN e.individual_lesson_id IS NULL THEN gl.individual_lesson_id END) AS group_lessons,
+    COUNT(e.individual_lesson_id) AS ensembles
+FROM
+    time_slot ts
+JOIN
+    individual_lesson l ON ts.timeslot_id = l.timeslot_id
+LEFT JOIN
+    group_lesson gl ON l.individual_lesson_id = gl.individual_lesson_id
+LEFT JOIN
+    ensemble e ON l.individual_lesson_id = e.individual_lesson_id
+WHERE
+    EXTRACT(YEAR FROM ts.date) = 2023
+GROUP BY
+    EXTRACT(MONTH FROM ts.date)
+ORDER BY
+    month;
