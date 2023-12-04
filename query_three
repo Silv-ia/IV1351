@@ -38,3 +38,34 @@ WHERE
     EXTRACT(MONTH FROM ts.date) = 1
 GROUP BY 
     i.instructor_id, pd.first_name, pd.last_name;
+
+
+
+-- ensembles
+SELECT
+    e.individual_lesson_id,
+    e.genre,
+    g.max_attendees,
+    ts.date AS time_slot_date,
+    COUNT(b.student_id) AS attendees,
+    CASE
+        WHEN COUNT(b.student_id) >= g.max_attendees THEN 'Full Booked'
+        WHEN COUNT(b.student_id) >= g.max_attendees - 2 THEN '1-2 Seats Left'
+        ELSE 'More Seats Left'
+    END AS booking_status
+FROM
+    ensemble e
+JOIN
+    group_lesson g ON e.individual_lesson_id = g.individual_lesson_id
+JOIN
+    individual_lesson l ON e.individual_lesson_id = l.individual_lesson_id
+JOIN
+    time_slot ts ON l.timeslot_id = ts.timeslot_id
+LEFT JOIN
+    booking b ON e.individual_lesson_id = b.individual_lesson_id
+WHERE
+    ts.date BETWEEN CURRENT_DATE + INTERVAL '14 day' AND CURRENT_DATE + INTERVAL '21 days'
+GROUP BY
+    e.individual_lesson_id, e.genre, g.max_attendees, ts.date
+ORDER BY
+    e.genre, EXTRACT(ISODOW FROM ts.date);
