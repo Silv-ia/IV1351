@@ -315,7 +315,7 @@ INSERT INTO public.individual_lesson(
   (7,'beginner',4),
   (7,'intermediate',17),
   (2,'intermediate',17),
-  -- ens
+  -- ens. 21-45
   (1,'beginner',59),
   (4,'advanced',45),
   (4,'beginner',43),
