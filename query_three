@@ -1,6 +1,10 @@
 -- all lessons during a specific year, each month and lesson type. 
 
 SELECT
+-- display months w txt
+-- bc of inh – tot lessons are ind lesson_id from table "l"
+-- counts only ind lessons, NULL for ggl and e. then gl when e null.
+-- counts e. 
     TO_CHAR(ts.date, 'Month') AS month,
     COUNT(l.individual_lesson_id) AS total_lessons,
     COUNT(CASE WHEN gl.individual_lesson_id IS NULL AND e.individual_lesson_id IS NULL THEN l.individual_lesson_id END) AS individual_lessons,
