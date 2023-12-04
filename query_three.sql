@@ -1,5 +1,4 @@
 -- all lessons during a specific year, each month and lesson type. 
-
 SELECT
 -- display months w txt
 -- bc of inh – tot lessons are ind lesson_id from table "l"
@@ -26,7 +25,33 @@ ORDER BY
     MIN(ts.date);
 
 
+-- siblings.
+-- inner: nr of sibl
+-- outer: nr of students that have x amnt sibl.
+SELECT
+    COALESCE(num_siblings, 0) AS num_siblings,
+    COUNT(student_id) AS student_count
+FROM (
+    SELECT
+        s.student_id,
+        COUNT(ss.sibling_student_id) AS num_siblings
+    FROM
+        student s
+    LEFT JOIN
+        sibling ss ON s.student_id = ss.student_id
+    GROUP BY
+        s.student_id
+) AS student_siblings
+GROUP BY
+    COALESCE(num_siblings, 0)
+ORDER BY
+    COALESCE(num_siblings, 0);
+
 -- all instructors teaching during a specific month
+-- need to show their id, name and nr of lessons
+-- name is found in personal_details, the common col is pers_nr
+-- date is found in ts, w comn col being instr_id
+-- insert month as a nr
 SELECT 
     i.instructor_id,
     pd.first_name,
